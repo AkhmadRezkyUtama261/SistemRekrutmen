@@ -1,0 +1,486 @@
+/*
+ * @Module:      Utility Classes
+ * @Author:      FE-06 (Interaction Design)
+ * @Date:        2026-05-24
+ * @Description: Atomic utility classes for spacing, text alignment,
+ *               colors, display, visibility, flexbox/grid helpers,
+ *               truncation, backdrop blur, opacity, and z-index.
+ * @Ownership:   FE-06
+ */
+
+/* ═══════════════════════════════════════════════════════════════
+   §1  TEXT ALIGNMENT
+   ═══════════════════════════════════════════════════════════════ */
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+.text-justify{ text-align: justify; }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §2  TEXT COLORS  (supplement to design-system.css)
+   ═══════════════════════════════════════════════════════════════ */
+.text-white     { color: var(--color-white); }
+.text-primary   { color: var(--color-slate-200); }
+.text-secondary { color: var(--color-slate-400); }
+.text-muted     { color: var(--color-slate-500); }
+.text-indigo    { color: var(--color-indigo); }
+.text-emerald   { color: var(--color-emerald); }
+.text-amber     { color: var(--color-amber); }
+.text-rose      { color: var(--color-rose); }
+.text-sky       { color: var(--color-sky); }
+.text-inherit   { color: inherit; }
+
+/* ═══════════════════════════════════════════════════════════════
+   §3  BACKGROUND COLORS
+   ═══════════════════════════════════════════════════════════════ */
+.bg-midnight   { background-color: var(--color-midnight); }
+.bg-deep-slate { background-color: var(--color-deep-slate); }
+.bg-slate-700  { background-color: var(--color-slate-700); }
+.bg-indigo     { background-color: var(--color-indigo); }
+.bg-emerald    { background-color: var(--color-emerald); }
+.bg-amber      { background-color: var(--color-amber); }
+.bg-rose       { background-color: var(--color-rose); }
+.bg-sky        { background-color: var(--color-sky); }
+
+.bg-indigo-soft  { background-color: var(--color-indigo-50); }
+.bg-emerald-soft { background-color: var(--color-emerald-50); }
+.bg-amber-soft   { background-color: var(--color-amber-50); }
+.bg-rose-soft    { background-color: var(--color-rose-50); }
+.bg-sky-soft     { background-color: var(--color-sky-50); }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §4  TEXT SIZES
+   ═══════════════════════════════════════════════════════════════ */
+.text-xs  { font-size: var(--fs-caption); }
+.text-sm  { font-size: var(--fs-small); }
+.text-base{ font-size: var(--fs-body); }
+.text-lg  { font-size: var(--fs-h3); }
+.text-xl  { font-size: var(--fs-h2); }
+.text-2xl { font-size: var(--fs-h1); }
+.text-3xl { font-size: var(--fs-display); }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §5  FONT WEIGHT
+   ═══════════════════════════════════════════════════════════════ */
+.font-regular  { font-weight: var(--fw-regular); }
+.font-medium   { font-weight: var(--fw-medium); }
+.font-semibold { font-weight: var(--fw-semibold); }
+.font-bold     { font-weight: var(--fw-bold); }
+.font-extrabold{ font-weight: var(--fw-extrabold); }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §6  SPACING — Margin
+   ═══════════════════════════════════════════════════════════════ */
+/* All sides */
+.m-0  { margin: var(--space-0); }
+.m-1  { margin: var(--space-1); }
+.m-2  { margin: var(--space-2); }
+.m-3  { margin: var(--space-3); }
+.m-4  { margin: var(--space-4); }
+.m-5  { margin: var(--space-5); }
+.m-6  { margin: var(--space-6); }
+.m-8  { margin: var(--space-8); }
+.m-10 { margin: var(--space-10); }
+.m-12 { margin: var(--space-12); }
+.m-auto { margin: auto; }
+
+/* Margin-top */
+.mt-0  { margin-top: var(--space-0); }
+.mt-1  { margin-top: var(--space-1); }
+.mt-2  { margin-top: var(--space-2); }
+.mt-3  { margin-top: var(--space-3); }
+.mt-4  { margin-top: var(--space-4); }
+.mt-5  { margin-top: var(--space-5); }
+.mt-6  { margin-top: var(--space-6); }
+.mt-8  { margin-top: var(--space-8); }
+.mt-10 { margin-top: var(--space-10); }
+.mt-12 { margin-top: var(--space-12); }
+
+/* Margin-bottom */
+.mb-0  { margin-bottom: var(--space-0); }
+.mb-1  { margin-bottom: var(--space-1); }
+.mb-2  { margin-bottom: var(--space-2); }
+.mb-3  { margin-bottom: var(--space-3); }
+.mb-4  { margin-bottom: var(--space-4); }
+.mb-5  { margin-bottom: var(--space-5); }
+.mb-6  { margin-bottom: var(--space-6); }
+.mb-8  { margin-bottom: var(--space-8); }
+.mb-10 { margin-bottom: var(--space-10); }
+.mb-12 { margin-bottom: var(--space-12); }
+
+/* Margin-left */
+.ml-0  { margin-left: var(--space-0); }
+.ml-1  { margin-left: var(--space-1); }
+.ml-2  { margin-left: var(--space-2); }
+.ml-3  { margin-left: var(--space-3); }
+.ml-4  { margin-left: var(--space-4); }
+.ml-5  { margin-left: var(--space-5); }
+.ml-6  { margin-left: var(--space-6); }
+.ml-8  { margin-left: var(--space-8); }
+.ml-auto { margin-left: auto; }
+
+/* Margin-right */
+.mr-0  { margin-right: var(--space-0); }
+.mr-1  { margin-right: var(--space-1); }
+.mr-2  { margin-right: var(--space-2); }
+.mr-3  { margin-right: var(--space-3); }
+.mr-4  { margin-right: var(--space-4); }
+.mr-5  { margin-right: var(--space-5); }
+.mr-6  { margin-right: var(--space-6); }
+.mr-8  { margin-right: var(--space-8); }
+.mr-auto { margin-right: auto; }
+
+/* Margin-x / Margin-y */
+.mx-0  { margin-left: var(--space-0); margin-right: var(--space-0); }
+.mx-2  { margin-left: var(--space-2); margin-right: var(--space-2); }
+.mx-4  { margin-left: var(--space-4); margin-right: var(--space-4); }
+.mx-6  { margin-left: var(--space-6); margin-right: var(--space-6); }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.my-0  { margin-top: var(--space-0); margin-bottom: var(--space-0); }
+.my-2  { margin-top: var(--space-2); margin-bottom: var(--space-2); }
+.my-4  { margin-top: var(--space-4); margin-bottom: var(--space-4); }
+.my-6  { margin-top: var(--space-6); margin-bottom: var(--space-6); }
+.my-8  { margin-top: var(--space-8); margin-bottom: var(--space-8); }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §7  SPACING — Padding
+   ═══════════════════════════════════════════════════════════════ */
+/* All sides */
+.p-0  { padding: var(--space-0); }
+.p-1  { padding: var(--space-1); }
+.p-2  { padding: var(--space-2); }
+.p-3  { padding: var(--space-3); }
+.p-4  { padding: var(--space-4); }
+.p-5  { padding: var(--space-5); }
+.p-6  { padding: var(--space-6); }
+.p-8  { padding: var(--space-8); }
+.p-10 { padding: var(--space-10); }
+.p-12 { padding: var(--space-12); }
+
+/* Padding-top */
+.pt-0  { padding-top: var(--space-0); }
+.pt-1  { padding-top: var(--space-1); }
+.pt-2  { padding-top: var(--space-2); }
+.pt-3  { padding-top: var(--space-3); }
+.pt-4  { padding-top: var(--space-4); }
+.pt-5  { padding-top: var(--space-5); }
+.pt-6  { padding-top: var(--space-6); }
+.pt-8  { padding-top: var(--space-8); }
+
+/* Padding-bottom */
+.pb-0  { padding-bottom: var(--space-0); }
+.pb-1  { padding-bottom: var(--space-1); }
+.pb-2  { padding-bottom: var(--space-2); }
+.pb-3  { padding-bottom: var(--space-3); }
+.pb-4  { padding-bottom: var(--space-4); }
+.pb-5  { padding-bottom: var(--space-5); }
+.pb-6  { padding-bottom: var(--space-6); }
+.pb-8  { padding-bottom: var(--space-8); }
+
+/* Padding-left */
+.pl-0  { padding-left: var(--space-0); }
+.pl-1  { padding-left: var(--space-1); }
+.pl-2  { padding-left: var(--space-2); }
+.pl-3  { padding-left: var(--space-3); }
+.pl-4  { padding-left: var(--space-4); }
+.pl-5  { padding-left: var(--space-5); }
+.pl-6  { padding-left: var(--space-6); }
+.pl-8  { padding-left: var(--space-8); }
+
+/* Padding-right */
+.pr-0  { padding-right: var(--space-0); }
+.pr-1  { padding-right: var(--space-1); }
+.pr-2  { padding-right: var(--space-2); }
+.pr-3  { padding-right: var(--space-3); }
+.pr-4  { padding-right: var(--space-4); }
+.pr-5  { padding-right: var(--space-5); }
+.pr-6  { padding-right: var(--space-6); }
+.pr-8  { padding-right: var(--space-8); }
+
+/* Padding-x / Padding-y */
+.px-0  { padding-left: var(--space-0); padding-right: var(--space-0); }
+.px-2  { padding-left: var(--space-2); padding-right: var(--space-2); }
+.px-3  { padding-left: var(--space-3); padding-right: var(--space-3); }
+.px-4  { padding-left: var(--space-4); padding-right: var(--space-4); }
+.px-6  { padding-left: var(--space-6); padding-right: var(--space-6); }
+.px-8  { padding-left: var(--space-8); padding-right: var(--space-8); }
+
+.py-0  { padding-top: var(--space-0); padding-bottom: var(--space-0); }
+.py-1  { padding-top: var(--space-1); padding-bottom: var(--space-1); }
+.py-2  { padding-top: var(--space-2); padding-bottom: var(--space-2); }
+.py-3  { padding-top: var(--space-3); padding-bottom: var(--space-3); }
+.py-4  { padding-top: var(--space-4); padding-bottom: var(--space-4); }
+.py-6  { padding-top: var(--space-6); padding-bottom: var(--space-6); }
+.py-8  { padding-top: var(--space-8); padding-bottom: var(--space-8); }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §8  DISPLAY & VISIBILITY
+   ═══════════════════════════════════════════════════════════════ */
+.d-none         { display: none; }
+.d-block        { display: block; }
+.d-inline       { display: inline; }
+.d-inline-block { display: inline-block; }
+.d-flex         { display: flex; }
+.d-inline-flex  { display: inline-flex; }
+.d-grid         { display: grid; }
+
+.visible   { visibility: visible; }
+.invisible { visibility: hidden; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §9  FLEXBOX UTILITIES
+   ═══════════════════════════════════════════════════════════════ */
+.flex-row        { flex-direction: row; }
+.flex-col        { flex-direction: column; }
+.flex-row-reverse{ flex-direction: row-reverse; }
+.flex-col-reverse{ flex-direction: column-reverse; }
+.flex-wrap       { flex-wrap: wrap; }
+.flex-nowrap     { flex-wrap: nowrap; }
+.flex-1          { flex: 1 1 0%; }
+.flex-auto       { flex: 1 1 auto; }
+.flex-none       { flex: none; }
+.flex-shrink-0   { flex-shrink: 0; }
+.flex-grow-0     { flex-grow: 0; }
+.flex-grow-1     { flex-grow: 1; }
+
+/* Justify Content */
+.justify-start   { justify-content: flex-start; }
+.justify-center  { justify-content: center; }
+.justify-end     { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around  { justify-content: space-around; }
+.justify-evenly  { justify-content: space-evenly; }
+
+/* Align Items */
+.items-start    { align-items: flex-start; }
+.items-center   { align-items: center; }
+.items-end      { align-items: flex-end; }
+.items-stretch  { align-items: stretch; }
+.items-baseline { align-items: baseline; }
+
+/* Align Self */
+.self-start  { align-self: flex-start; }
+.self-center { align-self: center; }
+.self-end    { align-self: flex-end; }
+.self-stretch{ align-self: stretch; }
+
+/* Gap */
+.gap-0  { gap: var(--space-0); }
+.gap-1  { gap: var(--space-1); }
+.gap-2  { gap: var(--space-2); }
+.gap-3  { gap: var(--space-3); }
+.gap-4  { gap: var(--space-4); }
+.gap-5  { gap: var(--space-5); }
+.gap-6  { gap: var(--space-6); }
+.gap-8  { gap: var(--space-8); }
+.gap-10 { gap: var(--space-10); }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §10  GRID HELPERS
+   ═══════════════════════════════════════════════════════════════ */
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+.grid-cols-12{ grid-template-columns: repeat(12, 1fr); }
+
+.place-center  { place-items: center; }
+.place-start   { place-items: start; }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §11  POSITION
+   ═══════════════════════════════════════════════════════════════ */
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }
+.sticky   { position: sticky; }
+.static   { position: static; }
+
+.inset-0  { top: 0; right: 0; bottom: 0; left: 0; }
+.top-0    { top: 0; }
+.right-0  { right: 0; }
+.bottom-0 { bottom: 0; }
+.left-0   { left: 0; }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §12  SIZING
+   ═══════════════════════════════════════════════════════════════ */
+.w-full    { width: 100%; }
+.w-auto    { width: auto; }
+.w-screen  { width: 100vw; }
+.max-w-full{ max-width: 100%; }
+.min-w-0   { min-width: 0; }
+
+.h-full    { height: 100%; }
+.h-auto    { height: auto; }
+.h-screen  { height: 100vh; }
+.min-h-screen { min-height: 100vh; }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §13  OVERFLOW
+   ═══════════════════════════════════════════════════════════════ */
+.overflow-hidden  { overflow: hidden; }
+.overflow-auto    { overflow: auto; }
+.overflow-visible { overflow: visible; }
+.overflow-scroll  { overflow: scroll; }
+.overflow-x-auto  { overflow-x: auto; }
+.overflow-y-auto  { overflow-y: auto; }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §14  TRUNCATION & LINE CLAMPING
+   ═══════════════════════════════════════════════════════════════ */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line-clamp-1,
+.line-clamp-2,
+.line-clamp-3,
+.line-clamp-4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-1 { -webkit-line-clamp: 1; }
+.line-clamp-2 { -webkit-line-clamp: 2; }
+.line-clamp-3 { -webkit-line-clamp: 3; }
+.line-clamp-4 { -webkit-line-clamp: 4; }
+
+.whitespace-nowrap { white-space: nowrap; }
+.whitespace-normal { white-space: normal; }
+.break-words       { word-wrap: break-word; overflow-wrap: break-word; }
+.break-all         { word-break: break-all; }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §15  BACKDROP BLUR UTILITIES
+   ═══════════════════════════════════════════════════════════════ */
+.backdrop-blur-none { backdrop-filter: none; }
+.backdrop-blur-sm   { backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.backdrop-blur      { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.backdrop-blur-md   { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+.backdrop-blur-lg   { backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+.backdrop-blur-xl   { backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §16  OPACITY UTILITIES
+   ═══════════════════════════════════════════════════════════════ */
+.opacity-0   { opacity: 0; }
+.opacity-5   { opacity: 0.05; }
+.opacity-10  { opacity: 0.1; }
+.opacity-20  { opacity: 0.2; }
+.opacity-25  { opacity: 0.25; }
+.opacity-30  { opacity: 0.3; }
+.opacity-40  { opacity: 0.4; }
+.opacity-50  { opacity: 0.5; }
+.opacity-60  { opacity: 0.6; }
+.opacity-70  { opacity: 0.7; }
+.opacity-75  { opacity: 0.75; }
+.opacity-80  { opacity: 0.8; }
+.opacity-90  { opacity: 0.9; }
+.opacity-100 { opacity: 1; }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §17  Z-INDEX SCALE
+   ═══════════════════════════════════════════════════════════════ */
+.z-0        { z-index: 0; }
+.z-base     { z-index: var(--z-base); }
+.z-dropdown { z-index: var(--z-dropdown); }
+.z-sticky   { z-index: var(--z-sticky); }
+.z-sidebar  { z-index: var(--z-sidebar); }
+.z-overlay  { z-index: var(--z-overlay); }
+.z-modal    { z-index: var(--z-modal); }
+.z-toast    { z-index: var(--z-toast); }
+.z-tooltip  { z-index: var(--z-tooltip); }
+.z-max      { z-index: var(--z-max); }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §18  BORDER UTILITIES
+   ═══════════════════════════════════════════════════════════════ */
+.border       { border: 1px solid var(--color-slate-700); }
+.border-t     { border-top: 1px solid var(--color-slate-700); }
+.border-b     { border-bottom: 1px solid var(--color-slate-700); }
+.border-l     { border-left: 1px solid var(--color-slate-700); }
+.border-r     { border-right: 1px solid var(--color-slate-700); }
+.border-none  { border: none; }
+
+.border-indigo  { border-color: var(--color-indigo); }
+.border-emerald { border-color: var(--color-emerald); }
+.border-amber   { border-color: var(--color-amber); }
+.border-rose    { border-color: var(--color-rose); }
+
+.rounded-none { border-radius: 0; }
+.rounded-sm   { border-radius: var(--radius-sm); }
+.rounded      { border-radius: var(--radius-md); }
+.rounded-lg   { border-radius: var(--radius-lg); }
+.rounded-xl   { border-radius: var(--radius-xl); }
+.rounded-2xl  { border-radius: var(--radius-2xl); }
+.rounded-full { border-radius: var(--radius-full); }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §19  SHADOW UTILITIES
+   ═══════════════════════════════════════════════════════════════ */
+.shadow-none  { box-shadow: none; }
+.shadow-sm    { box-shadow: var(--shadow-sm); }
+.shadow       { box-shadow: var(--shadow-md); }
+.shadow-lg    { box-shadow: var(--shadow-lg); }
+.shadow-xl    { box-shadow: var(--shadow-xl); }
+.shadow-2xl   { box-shadow: var(--shadow-2xl); }
+.shadow-inner { box-shadow: var(--shadow-inner); }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §20  CURSOR UTILITIES
+   ═══════════════════════════════════════════════════════════════ */
+.cursor-pointer  { cursor: pointer; }
+.cursor-default  { cursor: default; }
+.cursor-not-allowed { cursor: not-allowed; }
+.cursor-grab     { cursor: grab; }
+.cursor-grabbing { cursor: grabbing; }
+.pointer-events-none { pointer-events: none; }
+.pointer-events-auto { pointer-events: auto; }
+.select-none     { user-select: none; }
+.select-all      { user-select: all; }
+
+
+/* ═══════════════════════════════════════════════════════════════
+   §21  TRANSITION UTILITIES
+   ═══════════════════════════════════════════════════════════════ */
+.transition-none    { transition: none; }
+.transition-all     { transition: var(--transition-base); }
+.transition-fast    { transition: var(--transition-fast); }
+.transition-colors  { transition: var(--transition-colors); }
+.transition-opacity { transition: opacity var(--duration-normal) var(--ease-standard); }
+.transition-transform { transition: transform var(--duration-normal) var(--ease-standard); }

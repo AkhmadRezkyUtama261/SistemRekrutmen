@@ -1,0 +1,28 @@
+# ═══════════════════════════════════════════════════════════════
+# RecruitPro Enterprise — Uploads .htaccess
+# @Author:      BE-06
+# @Date:        2026-05-24
+# @Description: Deny all direct access to uploaded files.
+#               Files should only be served through PHP download handler.
+# ═══════════════════════════════════════════════════════════════
+
+# Deny all access
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>
+
+# Disable PHP execution
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+
+# Block all file types
+<FilesMatch ".*">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+</FilesMatch>
