@@ -1,15 +1,11 @@
 
 <?php
-/*
- * @Module:      Landing Page
- * @Author:      FE-02 (Landing Page & Brand)
- * @Date:        2026-05-24
- * @Description: Public landing page with hero section, features, and CTA.
- * @Ownership:   FE-02
- *
- * RecruitPro Enterprise — © 2026
- * Do NOT modify without PR approval from module owner.
- */
+session_start();
+if (!isset($_SESSION['user'])) {
+    header('Location: login.php'); // Mengusir paksa user ke file login.php kamu jika belum auth
+    exit;
+}
+?>
 
 require_once __DIR__ . '/config/app.php';
 require_once __DIR__ . '/config/database.php';
