@@ -1,10 +1,8 @@
 <?php
 session_start();
-if (!isset($_SESSION['user'])) {
-    header('Location: login.php'); // Mengusir paksa user ke file login.php kamu jika belum auth
-    exit;
-}
-?>
+
+// Halaman utama (beranda) sengaja dibuat PUBLIK!
+// Jadi siapa saja (baik yang sudah login maupun belum) bisa melihat desain mewahnya.
 
 require_once __DIR__ . '/config/app.php';
 require_once __DIR__ . '/config/database.php';
