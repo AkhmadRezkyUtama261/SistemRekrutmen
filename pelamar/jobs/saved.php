@@ -19,9 +19,10 @@ try {
     $stmt = Database::getConnection()->prepare("
         SELECT j.*, h.company_name, sj.created_at as saved_at
         FROM saved_jobs sj
+        JOIN pelamar_profiles p ON sj.pelamar_profile_id = p.id
         JOIN jobs j ON sj.job_id = j.id
         JOIN hr_profiles h ON j.hr_profile_id = h.id
-        WHERE sj.pelamar_id = :uid
+        WHERE p.user_id = :uid
         ORDER BY sj.created_at DESC
     ");
     $stmt->execute(['uid' => $_SESSION['user_id']]);
@@ -90,9 +91,9 @@ try {
                                 <a href="<?= BASE_URL ?>/pelamar/jobs/detail.php?id=<?= $job['id'] ?>" class="flex-1 text-center py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-semibold transition-colors">
                                     Lihat Detail
                                 </a>
-                                <a href="<?= BASE_URL ?>/pelamar/jobs/save.php?id=<?= $job['id'] ?>&action=remove" onclick="return confirm('Hapus dari daftar simpan?')" class="px-4 py-2 rounded-lg bg-rose-500/10 hover:bg-rose-500/20 text-rose-500 font-semibold transition-colors border border-rose-500/20">
+                                <button onclick="hapusSaved(<?= $job['id'] ?>)" class="px-4 py-2 rounded-lg bg-rose-500/10 hover:bg-rose-500/20 text-rose-500 font-semibold transition-colors border border-rose-500/20">
                                     Hapus
-                                </a>
+                                </button>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -102,5 +103,19 @@ try {
     </main>
 
     <?php require_once __DIR__ . '/../../components/footer.php'; ?>
+    <script>
+    function hapusSaved(jobId) {
+        if(!confirm('Hapus dari daftar simpan?')) return;
+        fetch('save.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: 'job_id=' + jobId
+        })
+        .then(res => res.json())
+        .then(data => {
+            if(data.status === 'unsaved') window.location.reload();
+        });
+    }
+    </script>
 </body>
 </html>
