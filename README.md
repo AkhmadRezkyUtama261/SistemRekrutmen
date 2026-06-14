@@ -22,6 +22,10 @@ Pelamar
 <img width="1918" height="908" alt="Cuplikan layar 2026-06-14 234043" src="https://github.com/user-attachments/assets/83cc31ce-e178-4c82-8db8-ab61ceda20fa" />
 <img width="1918" height="905" alt="Cuplikan layar 2026-06-14 234049" src="https://github.com/user-attachments/assets/45a671a2-7ff8-40bf-99f5-5ca83556acb1" />
 
+<img width="1918" height="900" alt="Cuplikan layar 2026-06-14 234507" src="https://github.com/user-attachments/assets/79277db4-c9ba-4546-923f-cbaed7afa2ae" />
+<img width="1918" height="906" alt="Cuplikan layar 2026-06-14 234411" src="https://github.com/user-attachments/assets/d157ad0b-c97f-4de4-9e42-ad761e8f5414" />
+<img width="1917" height="896" alt="Cuplikan layar 2026-06-14 234421" src="https://github.com/user-attachments/assets/306611e6-d439-4c2b-a1be-78cae0db6083" />
+
 Sistem rekrutmen berbasis web untuk memudahkan pelamar mencari pekerjaan dan memudahkan HRD dalam mengelola lowongan serta memonitor status pelamar. Proyek ini dibangun menggunakan **PHP Native (PDO)**, **MySQL**, dan **Tailwind CSS**.
 
 ## Prasyarat
