@@ -51,6 +51,7 @@ Beranda
 <img width="1918" height="902" alt="Cuplikan layar 2026-06-15 003405" src="https://github.com/user-attachments/assets/d0afaf22-9d67-4676-bfde-283392b153ac" />
 <img width="1918" height="886" alt="Cuplikan layar 2026-06-15 003416" src="https://github.com/user-attachments/assets/daf60b05-fa6b-4268-b1a5-e10e3b98cb4d" />
 
+<img width="1917" height="907" alt="Cuplikan layar 2026-06-15 004136" src="https://github.com/user-attachments/assets/2cf8e89d-e0c3-4bb7-9bcd-90ba1732496f" />
 
 
 
