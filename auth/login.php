@@ -162,7 +162,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="space-y-1.5">
                     <div class="flex items-center justify-between">
                         <label for="password" class="block text-sm font-medium text-slate-300">Kata Sandi</label>
-                        <a href="#" class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline transition-colors">Lupa sandi?</a>
+                        <a href="forgot_password.php" class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline transition-colors">Lupa sandi?</a>
                     </div>
                     <input type="password" id="password" name="password" required
                            class="w-full bg-slate-900/50 border border-slate-700 rounded-xl px-4 py-3 text-slate-200 placeholder-slate-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
