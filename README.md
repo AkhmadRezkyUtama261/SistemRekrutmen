@@ -53,6 +53,9 @@ Beranda
 
 <img width="1917" height="907" alt="Cuplikan layar 2026-06-15 004136" src="https://github.com/user-attachments/assets/2cf8e89d-e0c3-4bb7-9bcd-90ba1732496f" />
 
+Versi Theme Gelap
+Note: Untuk isi menu dll selebihnya masih sama 
+<img width="1918" height="911" alt="image" src="https://github.com/user-attachments/assets/69873fd5-3832-41e1-8522-cd4c27527df4" />
 
 
 Sistem rekrutmen berbasis web untuk memudahkan pelamar mencari pekerjaan dan memudahkan HRD dalam mengelola lowongan serta memonitor status pelamar. Proyek ini dibangun menggunakan **PHP Native (PDO)**, **MySQL**, dan **Tailwind CSS**.
