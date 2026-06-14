@@ -1,0 +1,49 @@
+Nama Tabel,Nama Kolom,Tipe Data,Constraint & Aturan
+users,id,INT UNSIGNED,"Primary Key, Auto Increment"
+,email,VARCHAR(100),"UNIQUE, Not Null"
+,password_hash,VARCHAR(255),Not Null
+,role,VARCHAR(20),"Enum: 'hr', 'pelamar'"
+,created_at,DATETIME,Default CURRENT_TIMESTAMP
+hr_profiles,id,INT UNSIGNED,"Primary Key, Auto Increment"
+,user_id,INT UNSIGNED,"Foreign Key -> users(id), UNIQUE"
+,company_name,VARCHAR(255),Not Null
+,industry,VARCHAR(100),Nullable
+,location,VARCHAR(255),Nullable
+,phone,VARCHAR(20),Nullable
+,website,VARCHAR(255),Nullable
+,company_description,TEXT,Nullable
+pelamar_profiles,id,INT UNSIGNED,"Primary Key, Auto Increment"
+,user_id,INT UNSIGNED,"Foreign Key -> users(id), UNIQUE"
+,full_name,VARCHAR(255),Not Null
+,phone,VARCHAR(20),Nullable
+,date_of_birth,DATE,Nullable
+,address,TEXT,Nullable
+,education_level,VARCHAR(50),Nullable
+,skills,TEXT,Nullable
+,cv_file_path,VARCHAR(255),Nullable
+jobs,id,INT UNSIGNED,"Primary Key, Auto Increment"
+,hr_profile_id,INT UNSIGNED,Foreign Key -> hr_profiles(id)
+,title,VARCHAR(255),Not Null
+,description,TEXT,Not Null
+,requirements,TEXT,Nullable
+,location,VARCHAR(255),Nullable
+,job_type,VARCHAR(50),Default: full_time
+,salary_range,VARCHAR(100),Nullable
+,deadline,DATE,Nullable
+,status,VARCHAR(20),Default: active
+applications,id,INT UNSIGNED,"Primary Key, Auto Increment"
+,job_id,INT UNSIGNED,Foreign Key -> jobs(id)
+,pelamar_profile_id,INT UNSIGNED,Foreign Key -> pelamar_profiles(id)
+,cover_letter,TEXT,Nullable
+,current_status,VARCHAR(30),Default: applied
+,applied_at,DATETIME,Default CURRENT_TIMESTAMP
+status_history,id,INT UNSIGNED,"Primary Key, Auto Increment"
+,application_id,INT UNSIGNED,Foreign Key -> applications(id)
+,status,VARCHAR(30),Not Null
+,notes,TEXT,Nullable
+,changed_by_user_id,INT UNSIGNED,Foreign Key -> users(id)
+,changed_at,DATETIME,Default CURRENT_TIMESTAMP
+saved_jobs,id,INT UNSIGNED,"Primary Key, Auto Increment"
+,pelamar_profile_id,INT UNSIGNED,Foreign Key -> pelamar_profiles(id)
+,job_id,INT UNSIGNED,Foreign Key -> jobs(id)
+,saved_at,DATETIME,Default CURRENT_TIMESTAMP

@@ -1,0 +1,8 @@
+Nama Class OOP (UML),Tabel Database,Deskripsi Singkat
+User,users,"Menyimpan data autentikasi (email, password, role)."
+HrProfile,hr_profiles,"Menyimpan detail perusahaan yang terhubung ke users."
+PelamarProfile,pelamar_profiles,"Menyimpan detail pelamar (nama, file CV) yang terhubung ke users."
+Job,jobs,"Menyimpan data lowongan yang dibuat oleh hr_profiles."
+Application,applications,"Menyimpan relasi pelamaran kerja (Many-to-Many antara pelamar dan lowongan)."
+SavedJob,saved_jobs,"Menyimpan data lowongan yang di-bookmark (disimpan) oleh pelamar."
+StatusHistory,status_history,"Menyimpan riwayat perubahan status dari sebuah lamaran pekerjaan."

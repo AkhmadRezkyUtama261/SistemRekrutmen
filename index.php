@@ -75,9 +75,18 @@ try {
                         </span>
                     </h1>
                     
-                    <p class="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+                    <p class="text-lg md:text-xl text-slate-400 mb-8 max-w-2xl mx-auto leading-relaxed">
                         Platform rekrutmen terintegrasi yang menghubungkan talenta terbaik dengan perusahaan terkemuka. Proses mudah, transparan, dan profesional.
                     </p>
+
+                    <!-- Group 5 Members (For Lecturer to see clearly) -->
+                    <div class="mb-12 p-4 glass-card border border-indigo-500/20 bg-indigo-900/10 rounded-2xl max-w-4xl mx-auto backdrop-blur-md">
+                        <p class="text-xs font-bold text-indigo-400 mb-2 uppercase tracking-widest">Tugas Final Project Pemrograman Web — Kelompok 5</p>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed font-medium">
+                            Akhmad Rezky Utama (261) &bull; Dev Aldino Zain (260) &bull; Andhika Ryan Stito (263) &bull; 
+                            Muhammad Randyano (271) &bull; Albukhari Insan Kamil &bull; Faiz Sulthon Daud Muhammad (258)
+                        </p>
+                    </div>
 
                     <!-- Floating Glass Search Bar -->
                     <form action="<?= BASE_URL ?>/pelamar/jobs/browse.php" method="GET" class="glass-card-lg p-2 rounded-full mb-16 max-w-3xl mx-auto flex flex-col md:flex-row gap-2 relative z-20 shadow-[0_20px_40px_rgba(79,70,229,0.15)] animate-fade-in-up delay-200 interactive-card">

@@ -119,5 +119,4 @@
         </div>
     </div>
 </footer>
-< s c r i p t > d o c u m e n t . a d d E v e n t L i s t e n e r ( " m o u s e m o v e " , ( e ) = > { d o c u m e n t . q u e r y S e l e c t o r A l l ( " . i n t e r a c t i v e - c a r d " ) . f o r E a c h ( ( c a r d ) = > { c o n s t   r e c t = c a r d . g e t B o u n d i n g C l i e n t R e c t ( ) ; c o n s t   x = e . c l i e n t X - r e c t . l e f t ; c o n s t   y = e . c l i e n t Y - r e c t . t o p ; c a r d . s t y l e . s e t P r o p e r t y ( " - - m o u s e - x " , ` $ { x } p x ` ) ; c a r d . s t y l e . s e t P r o p e r t y ( " - - m o u s e - y " , ` $ { y } p x ` ) ; } ) ; } ) ; < / s c r i p t >  
- 
+<script>document.addEventListener("mousemove",(e)=>{document.querySelectorAll(".interactive-card").forEach((card)=>{const rect=card.getBoundingClientRect();const x=e.clientX-rect.left;const y=e.clientY-rect.top;card.style.setProperty("--mouse-x", `${x}px`);card.style.setProperty("--mouse-y", `${y}px`);});});</script>
