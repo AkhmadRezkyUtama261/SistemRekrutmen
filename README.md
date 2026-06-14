@@ -27,6 +27,13 @@ Pelamar
 <img width="1917" height="896" alt="Cuplikan layar 2026-06-14 234421" src="https://github.com/user-attachments/assets/306611e6-d439-4c2b-a1be-78cae0db6083" />
 
 Profil Pelamar
+<img width="1918" height="923" alt="Cuplikan layar 2026-06-14 235144" src="https://github.com/user-attachments/assets/11512dc7-fc05-48b2-aaaa-4d9853174328" />
+<img width="1918" height="907" alt="Cuplikan layar 2026-06-14 235138" src="https://github.com/user-attachments/assets/97d3d824-f906-463c-98f4-a0c0ead666ff" />
+
+cetak cv
+<img width="1918" height="920" alt="Cuplikan layar 2026-06-15 000033" src="https://github.com/user-attachments/assets/f2388c8a-6b54-43ec-80a1-dfc5c823dbf8" />
+<img width="1918" height="905" alt="Cuplikan layar 2026-06-15 000047" src="https://github.com/user-attachments/assets/5062b21a-4a91-48a0-a1a8-034c6b2875c7" />
+<img width="1917" height="906" alt="Cuplikan layar 2026-06-15 000027" src="https://github.com/user-attachments/assets/cb93338c-45e6-4323-bf21-0851f113bb65" />
 
 
 
