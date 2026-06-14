@@ -36,6 +36,11 @@ cetak cv
 <img width="1918" height="920" alt="Cuplikan layar 2026-06-15 000033" src="https://github.com/user-attachments/assets/f2388c8a-6b54-43ec-80a1-dfc5c823dbf8" />
 <img width="1918" height="905" alt="Cuplikan layar 2026-06-15 000047" src="https://github.com/user-attachments/assets/5062b21a-4a91-48a0-a1a8-034c6b2875c7" />
 
+
+
+HR
+<img width="1918" height="897" alt="Cuplikan layar 2026-06-15 001143" src="https://github.com/user-attachments/assets/3303f2b3-c173-471b-ad11-851de518e48a" />
+
 Sistem rekrutmen berbasis web untuk memudahkan pelamar mencari pekerjaan dan memudahkan HRD dalam mengelola lowongan serta memonitor status pelamar. Proyek ini dibangun menggunakan **PHP Native (PDO)**, **MySQL**, dan **Tailwind CSS**.
 
 ## Prasyarat
