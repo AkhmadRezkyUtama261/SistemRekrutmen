@@ -45,10 +45,10 @@ Beranda
 
 <img width="1918" height="891" alt="Cuplikan layar 2026-06-15 003353" src="https://github.com/user-attachments/assets/61acad3e-2ed3-4dd2-9194-0be349dcd59c" />
 
-<img width="1918" height="886" alt="Cuplikan layar 2026-06-15 003416" src="https://github.com/user-attachments/assets/daf60b05-fa6b-4268-b1a5-e10e3b98cb4d" />
 <img width="1918" height="902" alt="Cuplikan layar 2026-06-15 003440" src="https://github.com/user-attachments/assets/0a56e367-8774-4444-abc3-6f0a30d0ff07" />
 <img width="1918" height="902" alt="Cuplikan layar 2026-06-15 003405" src="https://github.com/user-attachments/assets/d0afaf22-9d67-4676-bfde-283392b153ac" />
-<img width="1918" height="882" alt="Cuplikan layar 2026-06-15 003744" src="https://github.com/user-attachments/assets/b619b97d-23e3-40fd-a839-b60ab5e9145d" />
+<img width="1918" height="886" alt="Cuplikan layar 2026-06-15 003416" src="https://github.com/user-attachments/assets/daf60b05-fa6b-4268-b1a5-e10e3b98cb4d" />
+
 
 
 
