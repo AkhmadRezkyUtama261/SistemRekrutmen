@@ -1,4 +1,3 @@
-<img width="1918" height="882" alt="Cuplikan layar 2026-06-15 003744" src="https://github.com/user-attachments/assets/b8ae7b4c-e2bd-4a3c-9142-e15ed8015162" />
 # Sistem Rekrutmen - RecruitPro Enterprise
 
 Landing Page
