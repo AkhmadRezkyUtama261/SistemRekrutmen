@@ -1,5 +1,5 @@
 <?php
-require 'C:/xampp/htdocs/recruitment-enterprise/config/database.php';
+require __DIR__ . '/../config/database.php';
 $pdo = Database::getConnection();
 
 $pdo->beginTransaction();
