@@ -37,6 +37,7 @@ try {
     <title>Eksplorasi Perusahaan — <?= APP_NAME ?></title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="<?= BASE_URL ?>/assets/js/theme.js"></script>
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/design-system.css">
     <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/components.css">
 </head>

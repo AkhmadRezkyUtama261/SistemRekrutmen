@@ -173,6 +173,30 @@ function navActive(string $page, string $current): string {
                             Lamaran Saya
                         </span>
                     </a>
+                    <a href="<?= BASE_URL ?>/pelamar/perusahaan.php"
+                       class="px-4 py-2 rounded-xl text-sm font-medium border
+                              <?= navActive('perusahaan', $currentPage) ?>
+                              transition-all duration-200 ease-[cubic-bezier(0.4,0,0.2,1)]"
+                       id="nav-perusahaan">
+                        <span class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/>
+                            </svg>
+                            Perusahaan
+                        </span>
+                    </a>
+                    <a href="<?= BASE_URL ?>/pelamar/bantuan.php"
+                       class="px-4 py-2 rounded-xl text-sm font-medium border
+                              <?= navActive('bantuan', $currentPage) ?>
+                              transition-all duration-200 ease-[cubic-bezier(0.4,0,0.2,1)]"
+                       id="nav-bantuan">
+                        <span class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"/>
+                            </svg>
+                            Bantuan
+                        </span>
+                    </a>
                 <?php endif; ?>
             </div>
 
@@ -249,6 +273,26 @@ function navActive(string $page, string $current): string {
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
                                         </svg>
                                         Edit Profil
+                                    </a>
+                                    <a href="<?= BASE_URL ?>/pelamar/profile/cetak_cv.php"
+                                       class="flex items-center gap-3 px-3 py-2.5 rounded-lg
+                                              text-sm text-slate-300 hover:text-white hover:bg-white/5
+                                              transition-all duration-150"
+                                       id="dropdown-cetak-cv">
+                                        <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0110.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0l.229 2.523a1.125 1.125 0 01-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0021 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 00-1.913-.247M6.34 18H5.25A2.25 2.25 0 013 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 011.913-.247m10.5 0a48.536 48.536 0 00-10.5 0v2.796c0 1.171.84 2.15 2.002 2.215a45.023 45.023 0 018.496 0c1.162.065 2.002-.916 2.002-2.088v-2.922zM12 7.5v-3m0 0v-1.5m0 1.5h1.5m-1.5 0H10.5"/>
+                                        </svg>
+                                        Cetak CV
+                                    </a>
+                                    <a href="<?= BASE_URL ?>/pelamar/jobs/saved.php"
+                                       class="flex items-center gap-3 px-3 py-2.5 rounded-lg
+                                              text-sm text-slate-300 hover:text-white hover:bg-white/5
+                                              transition-all duration-150"
+                                       id="dropdown-saved-jobs">
+                                        <svg class="w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"/>
+                                        </svg>
+                                        Lowongan Tersimpan
                                     </a>
                                 <?php endif; ?>
                             </div>
@@ -334,6 +378,10 @@ function navActive(string $page, string $current): string {
                         <a href="<?= BASE_URL ?>/pelamar/dashboard.php" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all duration-200">Dashboard</a>
                         <a href="<?= BASE_URL ?>/pelamar/jobs/browse.php" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all duration-200">Cari Lowongan</a>
                         <a href="<?= BASE_URL ?>/pelamar/applications/list.php" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all duration-200">Lamaran Saya</a>
+                        <a href="<?= BASE_URL ?>/pelamar/perusahaan.php" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all duration-200">Perusahaan</a>
+                        <a href="<?= BASE_URL ?>/pelamar/bantuan.php" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all duration-200">Bantuan</a>
+                        <a href="<?= BASE_URL ?>/pelamar/jobs/saved.php" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all duration-200">Lowongan Tersimpan</a>
+                        <a href="<?= BASE_URL ?>/pelamar/profile/cetak_cv.php" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all duration-200">Cetak CV</a>
                         <div class="border-t border-white/[0.06] my-2"></div>
                         <a href="<?= BASE_URL ?>/pelamar/profile/edit.php" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 transition-all duration-200">Edit Profil</a>
                         <a href="<?= BASE_URL ?>/auth/logout.php" class="mobile-nav-link px-4 py-3 rounded-xl text-sm font-medium text-rose-400 hover:bg-rose-500/10 transition-all duration-200">Keluar</a>

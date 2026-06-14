@@ -105,15 +105,17 @@
         </div>
 
         <!-- Copyright Bar -->
-        <div class="border-t border-white/[0.06] py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p class="text-xs text-slate-500">
+        <div class="border-t border-white/[0.06] py-8 flex flex-col items-center justify-center gap-3">
+            <p class="text-sm font-semibold text-white bg-indigo-500/10 border border-indigo-500/20 px-4 py-1.5 rounded-full">
+                Tugas Final Project Pemrograman Web — Kelompok 5
+            </p>
+            <p class="text-xs text-slate-400 text-center leading-relaxed">
+                Akhmad Rezky Utama (261) &bull; Dev Aldino Zain (260) &bull; Andhika Ryan Stito (263) <br class="hidden md:block">
+                Muhammad Randyano (271) &bull; Albukhari Insan Kamil &bull; Faiz Sulthon Daud Muhammad (258)
+            </p>
+            <p class="text-xs text-slate-500 mt-2">
                 &copy; <?= date('Y') ?> RecruitPro Enterprise. All rights reserved.
             </p>
-            <div class="flex items-center gap-6">
-                <a href="#" class="text-xs text-slate-500 hover:text-slate-300 transition-colors">Kebijakan Privasi</a>
-                <a href="#" class="text-xs text-slate-500 hover:text-slate-300 transition-colors">Syarat & Ketentuan</a>
-                <a href="#" class="text-xs text-slate-500 hover:text-slate-300 transition-colors">Peta Situs</a>
-            </div>
         </div>
     </div>
 </footer>
