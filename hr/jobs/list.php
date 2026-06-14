@@ -123,12 +123,20 @@ $flash = getFlashMessage();
                                         <a href="<?= BASE_URL ?>/hr/jobs/edit.php?id=<?= $job['id'] ?>" class="text-indigo-400 hover:text-indigo-300 text-sm font-medium">Edit</a>
                                         <?php if ($job['status'] === JOB_STATUS_ACTIVE): ?>
                                             <span class="text-slate-600">|</span>
-                                            <form action="delete.php" method="POST" class="inline" onsubmit="return confirm('Tutup lowongan ini?');">
+                                            <form action="delete.php" method="POST" class="inline" onsubmit="return confirm('Tutup lowongan ini? Lowongan yang ditutup tidak bisa dilamar lagi.');">
                                                 <?= csrfField() ?>
                                                 <input type="hidden" name="id" value="<?= $job['id'] ?>">
-                                                <button type="submit" class="text-rose-400 hover:text-rose-300 text-sm font-medium">Tutup</button>
+                                                <input type="hidden" name="action" value="close">
+                                                <button type="submit" class="text-amber-400 hover:text-amber-300 text-sm font-medium">Tutup</button>
                                             </form>
                                         <?php endif; ?>
+                                        <span class="text-slate-600">|</span>
+                                        <form action="delete.php" method="POST" class="inline" onsubmit="return confirm('Hapus lowongan ini secara permanen? Semua data pelamar di lowongan ini akan ikut terhapus!');">
+                                            <?= csrfField() ?>
+                                            <input type="hidden" name="id" value="<?= $job['id'] ?>">
+                                            <input type="hidden" name="action" value="delete">
+                                            <button type="submit" class="text-rose-500 hover:text-rose-400 text-sm font-medium">Hapus</button>
+                                        </form>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

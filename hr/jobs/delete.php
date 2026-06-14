@@ -42,18 +42,26 @@ if (!$stmt->fetch()) {
     redirect(BASE_URL . '/hr/jobs/list.php');
 }
 
-// Perform soft delete (set status to closed)
+$action = $_POST['action'] ?? 'close';
+
+// Perform action
 try {
-    $stmt = $pdo->prepare("UPDATE jobs SET status = :status, updated_at = NOW() WHERE id = :id AND hr_profile_id = :hr");
-    $stmt->execute([
-        'status' => JOB_STATUS_CLOSED,
-        'id' => $jobId,
-        'hr' => $hrId
-    ]);
-    flashMessage('success', 'Lowongan berhasil ditutup.');
+    if ($action === 'delete') {
+        $stmt = $pdo->prepare("DELETE FROM jobs WHERE id = :id AND hr_profile_id = :hr");
+        $stmt->execute(['id' => $jobId, 'hr' => $hrId]);
+        flashMessage('success', 'Lowongan berhasil dihapus secara permanen beserta seluruh data pelamarnya.');
+    } else {
+        $stmt = $pdo->prepare("UPDATE jobs SET status = :status, updated_at = NOW() WHERE id = :id AND hr_profile_id = :hr");
+        $stmt->execute([
+            'status' => JOB_STATUS_CLOSED,
+            'id' => $jobId,
+            'hr' => $hrId
+        ]);
+        flashMessage('success', 'Lowongan berhasil ditutup. Pelamar tidak bisa mendaftar lagi.');
+    }
 } catch (PDOException $e) {
-    error_log("Error closing job: " . $e->getMessage());
-    flashMessage('error', 'Terjadi kesalahan sistem saat menutup lowongan.');
+    error_log("Error processing job action: " . $e->getMessage());
+    flashMessage('error', 'Terjadi kesalahan sistem saat memproses lowongan.');
 }
 
 redirect(BASE_URL . '/hr/jobs/list.php');
