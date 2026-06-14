@@ -7,8 +7,20 @@ Landing Page
 <img width="1918" height="912" alt="Cuplikan layar 2026-06-14 233520" src="https://github.com/user-attachments/assets/46e6409b-ed63-4219-9557-a2872db3168f" />
 <img width="1917" height="907" alt="Cuplikan layar 2026-06-14 233526" src="https://github.com/user-attachments/assets/ac92a90f-66a6-41a9-9c6e-1ba08136d810" />
 
+Register
+<img width="1918" height="900" alt="Cuplikan layar 2026-06-14 233804" src="https://github.com/user-attachments/assets/2d2d1086-bfef-4118-bde0-ae5ccd837a05" />
+<img width="1918" height="912" alt="Cuplikan layar 2026-06-14 233827" src="https://github.com/user-attachments/assets/26b89e85-4b6d-475b-b5a1-81a070725ce9" />
 
+Login
+<img width="1918" height="897" alt="Cuplikan layar 2026-06-14 233913" src="https://github.com/user-attachments/assets/d96d895c-e765-481a-af93-84a98cd7fb2e" />
+<img width="1918" height="897" alt="Cuplikan layar 2026-06-14 233929" src="https://github.com/user-attachments/assets/312dec75-1f70-44ef-aa2c-04666a7f41ac" />
 
+Pelamar
+
+<img width="1918" height="907" alt="Cuplikan layar 2026-06-14 234024" src="https://github.com/user-attachments/assets/21e6b6f7-79c1-4d04-8685-5dde578d6e7a" />
+<img width="1918" height="902" alt="Cuplikan layar 2026-06-14 234032" src="https://github.com/user-attachments/assets/3e420267-a2b1-48bd-99c5-ff0955109b38" />
+<img width="1918" height="908" alt="Cuplikan layar 2026-06-14 234043" src="https://github.com/user-attachments/assets/83cc31ce-e178-4c82-8db8-ab61ceda20fa" />
+<img width="1918" height="905" alt="Cuplikan layar 2026-06-14 234049" src="https://github.com/user-attachments/assets/45a671a2-7ff8-40bf-99f5-5ca83556acb1" />
 
 Sistem rekrutmen berbasis web untuk memudahkan pelamar mencari pekerjaan dan memudahkan HRD dalam mengelola lowongan serta memonitor status pelamar. Proyek ini dibangun menggunakan **PHP Native (PDO)**, **MySQL**, dan **Tailwind CSS**.
 
