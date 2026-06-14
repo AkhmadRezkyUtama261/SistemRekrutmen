@@ -1,11 +1,12 @@
 # Sistem Rekrutmen - RecruitPro Enterprise
 
 Landing Page
+<img width="1918" height="967" alt="Cuplikan layar 2026-06-14 233433" src="https://github.com/user-attachments/assets/f9c9759d-e641-4e3b-a0d4-7d274cfbc2f5" />
 <img width="1918" height="905" alt="Cuplikan layar 2026-06-14 233445" src="https://github.com/user-attachments/assets/03869dd0-608c-4c3b-8bb5-d4145832ef9a" />
 <img width="1917" height="911" alt="Cuplikan layar 2026-06-14 233459" src="https://github.com/user-attachments/assets/fec74d3b-25c9-4757-8674-3faf7d74f24d" />
 <img width="1918" height="912" alt="Cuplikan layar 2026-06-14 233520" src="https://github.com/user-attachments/assets/46e6409b-ed63-4219-9557-a2872db3168f" />
 <img width="1917" height="907" alt="Cuplikan layar 2026-06-14 233526" src="https://github.com/user-attachments/assets/ac92a90f-66a6-41a9-9c6e-1ba08136d810" />
-<img width="1918" height="967" alt="Cuplikan layar 2026-06-14 233433" src="https://github.com/user-attachments/assets/f9c9759d-e641-4e3b-a0d4-7d274cfbc2f5" />
+
 
 
 
