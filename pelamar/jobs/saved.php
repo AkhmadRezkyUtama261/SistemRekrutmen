@@ -17,13 +17,13 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== ROLE_PELAMAR) {
 try {
     // Ambil daftar lowongan yang disimpan oleh user ini
     $stmt = Database::getConnection()->prepare("
-        SELECT j.*, h.company_name, sj.created_at as saved_at
+        SELECT j.*, h.company_name, sj.saved_at
         FROM saved_jobs sj
         JOIN pelamar_profiles p ON sj.pelamar_profile_id = p.id
         JOIN jobs j ON sj.job_id = j.id
         JOIN hr_profiles h ON j.hr_profile_id = h.id
         WHERE p.user_id = :uid
-        ORDER BY sj.created_at DESC
+        ORDER BY sj.saved_at DESC
     ");
     $stmt->execute(['uid' => $_SESSION['user_id']]);
     $savedJobs = $stmt->fetchAll();
