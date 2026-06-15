@@ -1,13 +1,5 @@
 /**
- * @Module:      App — Global Initialization
- * @Author:      FE-06 (Interaction Design)
- * @Date:        2026-05-24
- * @Description: DOMContentLoaded bootstrap, toast notification system,
- *               flash message handler, confirm dialog wrapper, date/number
- *               formatting, auto-dismiss alerts, mobile detection,
- *               debounce/throttle utilities.
- * @Ownership:   FE-06
- */
+Otak navigasi utama. Berisi fungsi untuk membuka/menutup Sidebar di mode mobile, dan memunculkan Pop-up Modal atau Dropdown profil./
 
 'use strict';
 

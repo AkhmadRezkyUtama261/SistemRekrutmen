@@ -1,13 +1,7 @@
 /**
- * @Module:      Animations — Scroll Reveal & Interactions
- * @Author:      FE-06 (Interaction Design)
- * @Date:        2026-05-24
- * @Description: IntersectionObserver scroll reveals, staggered card
- *               animations, counter animation for stat numbers,
- *               smooth scroll for anchors, parallax hero effect,
- *               and page transition fade.
- * @Ownership:   FE-06
- */
+Pasangan sejati dari animations.css. Kalau CSS hanya mengatur bentuk gerakannya, file animations.js inilah yang mengatur KAPAN gerakan itu terjadi.
+Misalnya, file ini memantau aktivitas scroll mouse (Intersection Observer). Ketika pengunjung menggulir layar web ke bawah dan menjumpai kartu lowongan, file JS ini akan langsung memberikan perintah: "Sekarang waktunya kartu lowongan ini muncul perlahan (Fade-In)!". Ini adalah fitur rahasia yang membuat web Anda terasa mewah seperti buatan agensi profesional.
+*/
 
 'use strict';
 

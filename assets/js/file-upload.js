@@ -1,13 +1,5 @@
 /**
- * @Module:      File Upload — Drag & Drop PDF Uploader
- * @Author:      FE-06 (Interaction Design)
- * @Date:        2026-05-24
- * @Description: Drag-and-drop zone with visual feedback, file browse
- *               fallback, PDF MIME validation, 2MB size limit,
- *               progress simulation, preview with filename/size,
- *               remove/replace uploaded file, error display.
- * @Ownership:   FE-06
- */
+Mengontrol area drag & drop saat pelamar mengunggah CV. Secara instan menolak file jika bukan PDF atau ukurannya melebihi kapasitas (misal 2MB).*/
 
 'use strict';
 

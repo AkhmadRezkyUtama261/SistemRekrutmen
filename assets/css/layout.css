@@ -1,12 +1,5 @@
 /*
- * @Module:      Layout System
- * @Author:      FE-06 (Interaction Design)
- * @Date:        2026-05-24
- * @Description: Bento-Grid 12-column layout system, page templates,
- *               sidebar + main content structure, container sizing,
- *               and responsive breakpoint foundations.
- * @Ownership:   FE-06
- */
+ Pengatur struktur letak pondasi web agar konsisten, seperti posisi Navbar, Sidebar, lebar halaman utama, dan memastikan web Responsive (cocok di HP maupun Laptop)./
 
 /* ═══════════════════════════════════════════════════════════════
    §1  CONTAINERS

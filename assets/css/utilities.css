@@ -1,12 +1,6 @@
 /*
- * @Module:      Utility Classes
- * @Author:      FE-06 (Interaction Design)
- * @Date:        2026-05-24
- * @Description: Atomic utility classes for spacing, text alignment,
- *               colors, display, visibility, flexbox/grid helpers,
- *               truncation, backdrop blur, opacity, and z-index.
- * @Ownership:   FE-06
- */
+ : Berisi kelas-kelas kecil penyedia bantuan instan. Daripada merusak desain utama di components.css hanya karena ingin menggeser satu teks ke kanan, Anda menggunakan file ini (misalnya class khusus untuk mengubah ukuran teks text-sm, meratakan posisi text-center, atau memberi jarak ekstra sesaat). Ini sangat berguna untuk merapikan sedikit layout yang miring tanpa membongkar struktur utama.
+ /
 
 /* ═══════════════════════════════════════════════════════════════
    §1  TEXT ALIGNMENT
@@ -369,10 +363,10 @@
   overflow: hidden;
 }
 
-.line-clamp-1 { -webkit-line-clamp: 1; }
-.line-clamp-2 { -webkit-line-clamp: 2; }
-.line-clamp-3 { -webkit-line-clamp: 3; }
-.line-clamp-4 { -webkit-line-clamp: 4; }
+.line-clamp-1 { -webkit-line-clamp: 1; line-clamp: 1; }
+.line-clamp-2 { -webkit-line-clamp: 2; line-clamp: 2; }
+.line-clamp-3 { -webkit-line-clamp: 3; line-clamp: 3; }
+.line-clamp-4 { -webkit-line-clamp: 4; line-clamp: 4; }
 
 .whitespace-nowrap { white-space: nowrap; }
 .whitespace-normal { white-space: normal; }

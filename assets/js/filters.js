@@ -1,13 +1,5 @@
 /**
- * @Module:      Filters — Job Search & Filter Engine
- * @Author:      FE-06 (Interaction Design)
- * @Date:        2026-05-24
- * @Description: Filter form handler for industry/location/job_type,
- *               URL parameter management, real-time debounced search,
- *               filter tag display/removal, reset all, sort toggle,
- *               and AJAX-ready fetch wrapper.
- * @Ownership:   FE-06
- */
+ Ini yang membuat halaman Cari Lowongan kerja terasa sangat cepat. Saat pelamar mengetik "Desainer" di kotak pencarian, JavaScript ini akan langsung menyembunyikan lowongan lain dan hanya memunculkan "Desainer" secara Real-Time tanpa perlu me-refresh halaman peramban sama sekali.*/
 
 'use strict';
 

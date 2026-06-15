@@ -1,6 +1,4 @@
-/* ═══════════════════════════════════════════════════════════════
-   RecruitPro Enterprise — Animations
-   ═══════════════════════════════════════════════════════════════ */
+/* Memberikan efek interaktif seperti pergerakan tombol saat di-hover (disentuh mouse) atau efek elemen yang muncul perlahan dari bawah ke atas.*/
 
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }

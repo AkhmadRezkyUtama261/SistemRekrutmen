@@ -1,13 +1,5 @@
 /**
- * @Module:      Form Validation
- * @Author:      FE-06 (Interaction Design)
- * @Date:        2026-05-24
- * @Description: Client-side form validation engine — email, password
- *               strength, required fields, file type/size, phone,
- *               real-time input/blur validation, error message display,
- *               and form submission prevention.
- * @Ownership:   FE-06
- */
+ Penjaga gerbang Front-End. Melakukan Client-Side Validation secara instan. Contoh: menolak password yang kurang dari 8 huruf atau email yang tidak memakai logo "@" langsung di layar sebelum tombol diklik.*/
 
 'use strict';
 

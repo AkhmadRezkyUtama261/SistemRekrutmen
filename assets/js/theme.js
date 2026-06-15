@@ -1,6 +1,7 @@
 // assets/js/theme.js
-
+//Fitur super elegan yang mengecek apakah laptop pengunjung sedang memakai Mode Terang atau Mode Gelap. Hebatnya lagi, file ini akan menyimpan pilihan mode tersebut di memori (Local Storage), sehingga jika user mematikan laptop dan membuka web ini lagi besok, webnya masih mengingat warna tema kesukaan mereka.
 // Define the two palettes
+
 const lightPalette = {
     white: '#0f172a', // Deep charcoal for white text classes
     slate: { 
