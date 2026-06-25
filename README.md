@@ -1,4 +1,38 @@
-# Sistem Rekrutmen - RecruitPro Enterprise
+# Sistem Rekrutmen - RecruitPro Enterprise (Kelompok 5)
+
+### Deskripsi singkat aplikasi:
+**RecruitPro Enterprise (Sistem Rekrutmen / Lowongan Kerja)** adalah platform portal lowongan kerja berbasis web yang dirancang untuk menjembatani perusahaan (HRD) dan pencari kerja (Pelamar) secara efisien dan terstruktur. Aplikasi ini bertujuan mengatasi inefisiensi proses rekrutmen konvensional—seperti data pelamar yang tidak terpusat di email, hilangnya rekam jejak lamaran pelamar, serta kesulitan penyortiran dokumen CV secara manual—dengan mengintegrasikan seluruh tahapan ke dalam satu ekosistem digital yang terpadu.
+
+### Fitur Utama
+
+#### Fitur Pelamar (Job Seeker)
+* **Role-Based Authentication:** Sistem pendaftaran dan masuk khusus pelamar dengan antarmuka yang disesuaikan.
+* **Unggah CV Validatif:** Unggah berkas Curriculum Vitae (wajib format PDF) dilengkapi validasi ukuran dan format file baik dari sisi *front-end* maupun *back-end*.
+* **Pencarian & Filter Lowongan (Job Filter):** Memudahkan pencarian lowongan kerja aktif berdasarkan kategori industri, lokasi, dan jenis kontrak (*full-time, part-time, internship*).
+* **Apply Lowongan Instan:** Melamar pekerjaan dengan satu tombol aksi yang secara otomatis melampirkan profil dan dokumen CV pengguna.
+* **Pelacak Status Lamaran (Application Status):** Memantau status rekrutmen secara real-time (*Applied, Under Review, Interview, Rejected, Accepted*).
+
+#### Fitur Perusahaan & HRD (Employer)
+* **Kelola Lowongan (Job Posting):** Modul operasional lengkap (CRUD) bagi HRD untuk menerbitkan, mengubah, dan menutup informasi lowongan pekerjaan beserta kriteria dan deskripsinya.
+* **HR Dashboard Interaktif:** Panel kerja terpusat untuk memantau metrik jumlah pelamar pada setiap lowongan kerja.
+* **Manajemen Kandidat Terstruktur:** Tampilan daftar pelamar disajikan dalam format tabel/data grid yang responsif, mendukung navigasi halaman (*pagination*), serta memudahkan HRD melihat detail profil dan mengunduh berkas CV kandidat secara langsung.
+
+### Teknologi yang Digunakan
+* **Front-end:** HTML, JavaScript, dan framework CSS Tailwind / Bootstrap (Mendukung estetika korporat yang bersih dan opsi tema gelap).
+* **Back-end:** PHP Native (terstruktur dengan PDO) untuk performa dan keamanan query database.
+* **Database:** MySQL sebagai sistem manajemen basis data relasional.
+
+### Anggota kelompok:
+1. Akhmad Rezky Utama 261
+2. Dev Aldino Zain 260
+3. Andhika Ryan Stito 263
+4. Muhammad Randyano 271
+5. Albukhari Insan kamil 270
+6. Faiz Sulthon Daud Muhammad 258
+
+### Link Deploy:
+### https://rekrutmenkerja.pdwtiumy.click/
+
 
 Landing Page
 <img width="1918" height="967" alt="Cuplikan layar 2026-06-14 233433" src="https://github.com/user-attachments/assets/f9c9759d-e641-4e3b-a0d4-7d274cfbc2f5" />
@@ -119,4 +153,3 @@ Untuk mempermudah pengujian, Anda bisa masuk menggunakan salah satu akun berikut
 - `sql/` - File database (Schema & Seeder)
 - `uploads/` - Tempat penyimpanan file unggahan (CV, Foto)
 
-Semoga sukses untuk ujian/deploy aplikasinya! 🚀
